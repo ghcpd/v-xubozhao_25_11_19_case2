@@ -1,0 +1,16 @@
+E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\test_dependencies.py:339: DeprecationWarning: The '__version__' attribute is deprecated and will be removed in Flask 3.1. Use feature detection or 'importlib.metadata.version("flask")' instead.
+  version = module.__version__
+<frozen importlib._bootstrap>:488: Warning: Numpy built with MINGW-W64 on Windows 64 bits is experimental, and only available for 
+testing. You are advised not to use it for production. 
+
+CRASHES ARE TO BE EXPECTED - PLEASE REPORT THEM TO NUMPY DEVELOPERS
+E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Lib\site-packages\numpy\core\getlimits.py:225: RuntimeWarning: invalid value encountered in exp2
+  epsneg_f128 = exp2(ld(-113))
+E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Lib\site-packages\numpy\core\getlimits.py:226: RuntimeWarning: invalid value encountered in exp2
+  tiny_f128 = exp2(ld(-16382))
+E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Lib\site-packages\numpy\core\getlimits.py:240: RuntimeWarning: invalid value encountered in exp2
+  eps=exp2(ld(-112)),
+E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Lib\site-packages\numpy\core\getlimits.py:41: RuntimeWarning: invalid value encountered in nextafter
+  self._smallest_subnormal = nextafter(
+E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Lib\site-packages\numpy\core\getlimits.py:52: RuntimeWarning: invalid value encountered in log10
+  self.precision = int(-log10(self.eps))

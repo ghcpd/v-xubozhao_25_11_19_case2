@@ -1,0 +1,103 @@
+E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\test_dependencies.py:339: DeprecationWarning: The '__version__' attribute is deprecated and will be removed in Flask 3.1. Use feature detection or 'importlib.metadata.version("flask")' instead.
+  version = module.__version__
+
+============================================================
+DEPENDENCY VALIDATION TEST SUITE
+============================================================
+Python Version: 3.13.9 (tags/v3.13.9:8183fa5, Oct 14 2025, 14:09:13) [MSC v.1944 64 bit (AMD64)]
+Test Date: 2025-11-19 14:27:56
+============================================================
+
+============================================================
+PACKAGE VERSION INFORMATION
+============================================================
+  flask                3.0.3
+  requests             2.32.3
+  pandas               2.3.3
+  numpy                2.3.5
+  scikit-learn         1.7.2
+  jinja2               3.1.4
+  urllib3              2.2.3
+  sqlalchemy           2.0.35
+
+============================================================
+Testing: Flask
+============================================================
+  - Flask app creation: OK
+  - Route definition: OK
+  - JSON response: OK
+[PASS] Flask
+
+============================================================
+Testing: requests
+============================================================
+  - Session creation: OK
+  - Adapter configuration: OK
+  - URL utilities: OK
+[PASS] requests
+
+============================================================
+Testing: pandas
+============================================================
+  - DataFrame creation: OK
+  - Filtering operations: OK
+  - Concatenation (new API): OK
+  - GroupBy operations: OK
+[PASS] pandas
+
+============================================================
+Testing: numpy
+============================================================
+  - Array creation: OK
+  - Mathematical operations: OK
+  - Linear algebra: OK
+  - Random generation (new API): OK
+  - Data types: OK
+[PASS] numpy
+
+============================================================
+Testing: scikit-learn
+============================================================
+  - Data generation: OK
+  - Train/test split: OK
+  - Preprocessing: OK
+  - Model training: OK
+  - Predictions: OK
+[PASS] scikit-learn
+
+============================================================
+Testing: jinja2
+============================================================
+  - Template rendering: OK
+  - Autoescape (security): OK
+  - Filters: OK
+  - Control structures: OK
+[PASS] jinja2
+
+============================================================
+Testing: urllib3
+============================================================
+  - PoolManager creation: OK
+  - Timeout configuration: OK
+  - Retry configuration: OK
+  - URL parsing: OK
+[PASS] urllib3
+
+============================================================
+Testing: SQLAlchemy
+============================================================
+  - Engine creation: OK
+  - Model definition: OK
+  - Table creation: OK
+  - Data insertion: OK
+  - Query (new 2.0 API): OK
+[PASS] SQLAlchemy
+
+============================================================
+TEST SUMMARY
+============================================================
+Total Tests: 8
+Passed: 8
+Failed: 0
+Success Rate: 100.0%
+============================================================

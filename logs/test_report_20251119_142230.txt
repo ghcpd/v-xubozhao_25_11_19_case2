@@ -1,0 +1,29 @@
+============================================================
+DEPENDENCY VALIDATION TEST REPORT
+============================================================
+Date: 2025-11-19 14:22:34
+Python Version: Python 3.13.9
+Log File: logs\test_run_20251119_142230.log
+============================================================
+
+TEST RESULTS:
+Status: SOME TESTS FAILED ❌
+Exit Code: 1
+
+============================================================
+FULL OUTPUT:
+============================================================
+E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\test_dependencies.py:339: DeprecationWarning: The '__version__' attribute is deprecated and will be removed in Flask 3.1. Use feature detection or 'importlib.metadata.version("flask")' instead.   version = module.__version__  ============================================================ DEPENDENCY VALIDATION TEST SUITE ============================================================ Python Version: 3.13.9 (tags/v3.13.9:8183fa5, Oct 14 2025, 14:09:13) [MSC v.1944 64 bit (AMD64)] Test Date: 2025-11-19 14:22:30 ============================================================  ============================================================ PACKAGE VERSION INFORMATION ============================================================   flask                3.0.3   requests             2.32.3   pandas               2.3.3   numpy                2.3.5   scikit-learn         1.7.2   jinja2               3.1.4   urllib3              2.2.3   sqlalchemy           2.0.35  ============================================================ Testing: Flask ============================================================   - Flask app creation: OK   - Route definition: OK   - JSON response: OK Traceback (most recent call last):   File "E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\test_dependencies.py", line 25, in test     print(f"\u2705 PASSED: {name}")     ~~~~~^^^^^^^^^^^^^^^^^^^^^^   File "C:\Users\v-xubozhao\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode     return codecs.charmap_encode(input,self.errors,encoding_table)[0]            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined> System.Management.Automation.RemoteException During handling of the above exception, another exception occurred: System.Management.Automation.RemoteException Traceback (most recent call last):   File "E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\test_dependencies.py", line 380, in <module>     main()     ~~~~^^   File "E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\test_dependencies.py", line 363, in main     tester.test("Flask", test_flask)     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^   File "E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\test_dependencies.py", line 30, in test     print(f"\u274c FAILED: {name}")     ~~~~~^^^^^^^^^^^^^^^^^^^^^^   File "C:\Users\v-xubozhao\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode     return codecs.charmap_encode(input,self.errors,encoding_table)[0]            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+============================================================
+
+INSTALLED PACKAGES:
+============================================================
+Package            Version ------------------ ----------- blinker            1.9.0 certifi            2025.11.12 charset-normalizer 3.4.4 click              8.3.1 colorama           0.4.6 Flask              3.0.3 idna               3.11 itsdangerous       2.2.0 Jinja2             3.1.4 joblib             1.5.2 MarkupSafe         3.0.3 numpy              2.3.5 pandas             2.3.3 pip                25.3 python-dateutil    2.9.0.post0 pytz               2025.2 requests           2.32.3 scikit-learn       1.7.2 scipy              1.16.3 six                1.17.0 SQLAlchemy         2.0.35 threadpoolctl      3.6.0 typing_extensions  4.15.0 tzdata             2025.2 urllib3            2.2.3 Werkzeug           3.1.3
+============================================================
+
+ENVIRONMENT INFO:
+============================================================
+Virtual Environment: E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv
+Python Path: E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Scripts\python.exe
+Platform: Microsoft Windows NT 10.0.26200.0
+============================================================

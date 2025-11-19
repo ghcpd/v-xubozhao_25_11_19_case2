@@ -1,0 +1,29 @@
+============================================================
+DEPENDENCY VALIDATION TEST REPORT
+============================================================
+Date: 2025-11-19 14:14:13
+Python Version: Python 3.13.9
+Log File: logs\test_run_20251119_141410.log
+============================================================
+
+TEST RESULTS:
+Status: SOME TESTS FAILED ❌
+Exit Code: -1073741819
+
+============================================================
+FULL OUTPUT:
+============================================================
+E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\test_dependencies.py:339: DeprecationWarning: The '__version__' attribute is deprecated and will be removed in Flask 3.1. Use feature detection or 'importlib.metadata.version("flask")' instead.   version = module.__version__ <frozen importlib._bootstrap>:488: Warning: Numpy built with MINGW-W64 on Windows 64 bits is experimental, and only available for  testing. You are advised not to use it for production.  System.Management.Automation.RemoteException CRASHES ARE TO BE EXPECTED - PLEASE REPORT THEM TO NUMPY DEVELOPERS E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Lib\site-packages\numpy\core\getlimits.py:225: RuntimeWarning: invalid value encountered in exp2   epsneg_f128 = exp2(ld(-113)) E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Lib\site-packages\numpy\core\getlimits.py:226: RuntimeWarning: invalid value encountered in exp2   tiny_f128 = exp2(ld(-16382)) E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Lib\site-packages\numpy\core\getlimits.py:240: RuntimeWarning: invalid value encountered in exp2   eps=exp2(ld(-112)), E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Lib\site-packages\numpy\core\getlimits.py:41: RuntimeWarning: invalid value encountered in nextafter   self._smallest_subnormal = nextafter( E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Lib\site-packages\numpy\core\getlimits.py:52: RuntimeWarning: invalid value encountered in log10   self.precision = int(-log10(self.eps))
+============================================================
+
+INSTALLED PACKAGES:
+============================================================
+Package            Version ------------------ ----------- blinker            1.9.0 certifi            2025.11.12 charset-normalizer 3.4.4 click              8.3.1 colorama           0.4.6 Flask              3.0.3 idna               3.11 itsdangerous       2.2.0 Jinja2             3.1.4 joblib             1.5.2 MarkupSafe         3.0.3 numpy              1.26.4 pandas             2.2.3 pip                25.3 python-dateutil    2.9.0.post0 pytz               2025.2 requests           2.32.3 scikit-learn       1.5.2 scipy              1.16.3 six                1.17.0 SQLAlchemy         2.0.35 threadpoolctl      3.6.0 typing_extensions  4.15.0 tzdata             2025.2 urllib3            2.2.3 Werkzeug           3.1.3
+============================================================
+
+ENVIRONMENT INFO:
+============================================================
+Virtual Environment: E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv
+Python Path: E:\Bug Bash\11_19_case2\Claude-sonnet-4.5\venv\Scripts\python.exe
+Platform: Microsoft Windows NT 10.0.26200.0
+============================================================
