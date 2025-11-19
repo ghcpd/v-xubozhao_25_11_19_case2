@@ -1,0 +1,24 @@
+Test run start: 2025-11-19T06:25:10Z
+Running demo tests...
+Python: 3.11.13 (main, Jun  4 2025, 08:57:30) [GCC 9.4.0]
+numpy OK, sum: 6
+pandas OK, shape: (2, 2)
+sklearn OK, LogisticRegression available
+Hello Test
+sqlalchemy OK - in-memory DB
+
+Summary:
+ - flask: OK - Found Flask
+ - requests: OK - Found utils
+ - pandas: OK - Found DataFrame
+ - numpy: OK - Found array
+ - sklearn: OK - Found __version__
+ - jinja2: OK - Found Template
+ - urllib3: OK - Found __version__
+ - sqlalchemy: OK - Found create_engine
+
+All basic import checks passed
+Test run end: 2025-11-19T06:25:19Z
+Duration (s): 9
+Test run end: 2025-11-19T06:25:19Z
+Duration (s): 9
