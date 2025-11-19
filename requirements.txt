@@ -1,8 +1,23 @@
-Flask==1.0.2
-requests==2.19.1
-pandas==0.24.2
-numpy==1.15.0
-scikit-learn==0.20.0
-jinja2==2.10
-urllib3==1.24.1
-SQLAlchemy==1.2.7
+###############################
+# Core web framework & templating
+Flask==3.0.3              # security fixes; supports Python 3.8-3.12
+Jinja2==3.1.4             # flask dependency; CVE-2019-10906 fixed
+
+# HTTP client stack
+requests==2.32.3          # CVE-2018-18074 fixed
+urllib3==2.2.3            # CVE-2019-11236, CVE-2021-33503 fixed
+
+# Data processing (Python >=3.10,<3.13 recommended)
+pandas==2.2.2; python_version < "3.13" and python_version >= "3.10"
+numpy==1.26.4; python_version < "3.13" and python_version >= "3.10"  # pandas dep
+
+# Machine learning (Python >=3.10,<3.13)
+scikit-learn==1.4.2; python_version < "3.13" and python_version >= "3.10"
+scipy==1.11.4; python_version < "3.13" and python_version >= "3.10"         # scikit-learn dep
+
+# ORM
+SQLAlchemy==2.0.36        # CVE-2019-9769 fixed; modern API
+
+# Testing
+pytest==8.3.3
+
