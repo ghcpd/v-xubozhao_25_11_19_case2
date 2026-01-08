@@ -1,0 +1,40 @@
+📘 Task Description
+
+You are maintaining an old backend data processing project.
+The project has outdated and potentially insecure dependencies listed in its requirements.txt.
+
+🧩 Your Tasks
+
+Audit all dependencies and identify which ones are obsolete, insecure, or incompatible with Python 3.10+.
+
+Suggest and apply safe upgrades to fix warnings and compatibility issues.
+
+Generate and document a clear Before → After version diff report.
+
+Ensure the upgraded environment runs correctly using a demo test.
+
+✅ Requirements
+
+Generate test data – Use the provided requirements.txt.
+
+Reproducible environment – Include setup scripts (setup.sh, requirements.txt).
+
+Automated test environment – Include run_tests.sh or Makefile for one-command validation.
+
+Test code – Add minimal demo code to verify that upgraded libraries import and function correctly.
+
+Setup script – Automate dependency installation.
+
+Run test script – Execute validation tests and produce logs or report output.
+
+📊 Expected Output
+
+Updated requirements.txt (with safe versions).
+
+Dependency version diff (e.g., dependency_diff.md or .json).
+
+Minimal demo test code.
+
+setup.sh + run_tests.sh.
+
+Logs or console output confirming successful test execution.
